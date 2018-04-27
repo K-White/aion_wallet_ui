@@ -215,8 +215,16 @@
       </ul>
     </span>
 
-    <div class="status complete fade" ng-show="connectStatus"></div>
-    <div class="status lost fade" ng-show="!connectStatus"></div>
+    <!--div class="status complete fade" ng-show="connectStatus"></div>
+    <div class="status lost fade" ng-show="!connectStatus"></div-->
+
+      <div class="status complete fade" ng-show="connectStatus">
+      <span class="popover above">Connected</span>
+    </div>
+    <div class="status lost fade" ng-show="!connectStatus">
+      <span class="popover above">Not Connected</span>
+    </div>
+
   </nav>
 
 

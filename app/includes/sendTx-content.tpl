@@ -40,9 +40,8 @@
 
 
   <!-- If unlocked with PK -->
-  <article class="block" ng-hide="wallet.type=='addressOnly'" style="background: #12364c;
-      color: #fff;
-      border: 2px solid #2bc0ec;">
+  <article class="block" ng-hide="wallet.type=='addressOnly'" style="background: #fff;
+     color: #12173A; border: 2px solid #5af0bd;">
 
 
     <!-- To Address -->
