@@ -57,13 +57,14 @@
 body {
   // background: red;
   // background: white;
-  background: #eee;
+  background:linear-gradient(to bottom,#fff 0,#f6f8fe 16%,#f6f8fe 100%);
   //background-image: url(../images/background/bg-left.svg), url(../images/background/bg-right.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   // font-family: 'Roboto', sans-serif !important;
   font-family: 'Myriad Pro', sans-serif !important;
+  color:#333;
 }
 
 header {
@@ -96,7 +97,7 @@ header {
       display: none;
     }
   }
-  border-bottom: 1px solid #40bded!important;
+  border-bottom: 1px solid #4221cc!important;
   a.brand {
     padding: 5px 0;
     margin: auto;
@@ -201,8 +202,8 @@ nav.container {
   // padding-right: 30px;
   // background-color: #cecece;
   background: white;;
-  border: 2px solid #40bded;
-  color: #4221cc30;
+  border: 1px solid #4221cc;
+  color: #333;
   display: block;
   cursor: pointer;
 }
@@ -215,12 +216,20 @@ ul.dropdown-menu {
   padding: 15px 20px !important;
   .header--gas {
     //color: #40bded;
-    color: #2D7586;
+    //color: #2D7586;
     height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     label {
+      display: inline-block;
+      margin-top: .3rem;
+      margin-bottom: .3rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+    }
+    label.default{
       display: inline-block;
       margin-top: .3rem;
       margin-bottom: .3rem;
@@ -260,7 +269,7 @@ ul.dropdown-menu {
   .dark {
     min-width: 55px;
     display: inline-block;
-    color: #fff;
+    color: #333;
   }
   // button {
   //   position: absolute;
@@ -281,8 +290,8 @@ ul.dropdown-menu {
     border-radius: 3px;
     position: relative;
     // padding-right: 30px;
-    background-color:#12173A !important;
-    border: 2px solid #A6E0EE;
+    background-color:#4221cc !important;
+    border: 1px solid #fff;
     // color: #2D7586;
     color: #fff !important;
     display: block;
@@ -314,16 +323,18 @@ code {
 
 .block__main, .block__help,  {
   max-width: 1300px;
-  margin: 0 auto;
+  //margin: 0 auto;
   // padding: 20px 30px;
-  margin: 0 auto;
-  box-shadow: 16px 16px 47px 2px rgba(0,0,0,.07);
+  border-radius: 5px;
+    margin: 0 auto;
+    border: 0;
+  box-shadow:  0 0 12px 1px rgba(0,0,0,.1);
   padding: 0 !important;
   // background: linear-gradient(to top left,rgba(31, 203, 255, 0.02),rgba(31, 203, 255, 0.18));
   background: #fff;
-  color: #12173A;
+  color: #333;
   min-height: 483px;
-  border: 2px solid #5af0bd30;
+  //border: 2px solid #5af0bd30;
   display: flex;
   .left {
     display: flex;
@@ -445,11 +456,11 @@ code {
 .decrypt-drtv {
   max-width: 1300px;
   margin: 0 auto;
-  box-shadow: 16px 16px 47px 2px rgba(0,0,0,.07);
+  box-shadow:  0 0 12px 1px rgba(0,0,0,.1);
   background:#fff;
   color:  #12173A; //white;
   min-height: 483px;
-  border: 2px solid #5af0bd30;
+  //border: 2px solid #5af0bd30;
 
   display: flex;
   flex-direction: column;
@@ -543,7 +554,7 @@ article.decrypt-drtv  {
       // font-size: 13px;
       list-style-type: none;
       margin: 0;
-      color: #40bded;
+      color: #4221cc;
       padding-left: 20px;
       margin-bottom: 16px; 
       &:before {
@@ -551,7 +562,7 @@ article.decrypt-drtv  {
         font-size: 1.4rem;
         font-weight: 500;
         margin-right: .5rem;
-        color: #40bded;
+        color: #4221cc;
       }
     }
     ul {
@@ -559,7 +570,7 @@ article.decrypt-drtv  {
     }
   }
   a {
-    color: #40bded;;
+    color: #4221cc;;
   }
   a.btn-file {
     color: black !important;
@@ -579,6 +590,26 @@ a:hover {
     margin: auto;
     margin-bottom: 20px;
   }
+  h1{
+    font-size:1.5rem;
+    color:#4221cc;
+    position:relative;
+    //padding-bottom:25px;
+    //margin-bottom:25px;
+    padding: 0px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    z-index:100;
+  }
+  h1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 69px;
+    width: 50px;
+    height: 4px;
+    background-color: #5af0bd;
+  }
   p {
     margin: 0 0 .5rem;
   }
@@ -587,7 +618,8 @@ div.collapse-heading {
   background: #fff;
   color: #12173A;
   padding-bottom: 40px;
-  border: 2px solid #5af0bd30;
+  //border: 2px solid #5af0bd30;
+  box-shadow:  0 0 12px 1px rgba(0,0,0,.1);
   margin-bottom: 20px;
   padding: 20px;
 }
@@ -613,7 +645,7 @@ a.collapse-button {
     top: -47px;
     font-size: 76px;
     font-weight: lighter;
-    color: #12173A;
+    color: #333;
   }
   span:first-child {
     font-size: 45px;
@@ -637,18 +669,42 @@ a.collapse-button {
     // color: #88d5ec !important;
     // color: #40bded !important;
   }
+  h1{
+    font-size:1.5rem;
+    color:#4221cc;
+    position:relative;
+    padding-bottom:25px;
+    margin-bottom:25px;
+    z-index:100;
+  }
+  h1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #5af0bd;
+  }
 
   input:focus {
     box-shadow: 0 0 15px #88d5ec !important;
     // border: 1px solid #88d5ec !important;
   }
   a.btn-primary {
-    background: #12173A !important;
+    background: #4221cc !important;
+    border-color: #4221cc;
+    //background-color: #4221cc;
+    padding: 15px 25px;
+    border: 2px solid rgba(180,157,255,.15);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     color: #fff;
     background: transparent;
   }
   a {
-    color: #12173A;
+    color: #4221cc;
   }
 }
 a.btn-danger {
@@ -702,11 +758,11 @@ a.btn-danger {
     justify-content: center;
   }
   .block {
-    background: #12173A;
-    color: white;
+    background: white;
+    color: #12173A;
   }
   a {
-    color: #40bded !important;
+    color: #4221cc !important;
   }
   ul {
     list-style-type: none;
@@ -716,7 +772,7 @@ a.btn-danger {
       font-size: 1.4rem;
       font-weight: 500;
       margin-right: .5rem;
-      color: #40bded;
+      color: #4221cc;
     }
   }
   ol {
@@ -826,10 +882,10 @@ a.btn-danger {
   }
 
   .popover {
-    background-color: #40bded;
+    background-color: #4221cc;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
-    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    box-shadow:  0 0 12px 1px rgba(0,0,0,.1);
     color: #fff;
     display: none;
     font-size: 12px;
@@ -846,7 +902,7 @@ a.btn-danger {
     &:before {
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid #40bded;
+    border-left: 7px solid #4221cc;
     content: "";
     display: block;
     left: 100%;
