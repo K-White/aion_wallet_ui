@@ -40,8 +40,7 @@
 
 
   <!-- If unlocked with PK -->
-  <article class="block" ng-hide="wallet.type=='addressOnly'" style="background: #fff;
-     color: #12173A; border: 2px solid #5af0bd;">
+  <article class="block" ng-hide="wallet.type=='addressOnly'" style="">
 
 
     <!-- To Address -->
@@ -72,8 +71,8 @@
 
           <div class="input-group-btn">
 
-            <button style="min-width: 170px"
-               class="btn btn-default">
+            <button style="min-width: 170px;color:#fff;background-color:#4221cc "
+               class="btn btn-default ">
                 <strong>
                   AION
                 </strong>
@@ -165,7 +164,7 @@
     </div>
 
     <div class="clearfix form-group" ng-show="rootScopeShowRawTx">
-      <a class="btn btn-primary btn-block col-sm-11"
+      <a class="btn btn-primary btn-block col-sm-11 "
          data-toggle="modal"
          data-target="#sendTransaction"
          translate="SEND_trans"

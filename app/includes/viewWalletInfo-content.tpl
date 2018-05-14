@@ -28,7 +28,7 @@
  *     MyEtherWallet LLC  
  *******************************************************************************/-->
 <h1 class="wallet-details">
-  <img src="images/icons/small-logo.png"/>
+  <img src="images/icons/small-logo.svg"/>
   Use Wallet
 </h1>
 <article class="col-sm-4">

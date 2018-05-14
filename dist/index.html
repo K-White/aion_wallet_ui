@@ -219,7 +219,7 @@
           <button ng-click="changeCurNode('default'); dropCon= false">
             <label class="default" >Default</label>
           </button>
-          <button ng-click="changeCurNode('aion'); dropCon= false">
+          <button class="aion-button" ng-click="changeCurNode('aion'); dropCon= false">
             <label >Aion Test Net</label></br>
           </button>
 
@@ -234,8 +234,8 @@
                 <span class="dark">PORT:</span> <input type="text" ng-model="currentPort"><br>
               </div>
             </form>
-            <button ng-click="changeCurNode('other', currentIP, currentPort); dropCon=false">
-              <label>
+            <button class="aion-button" ng-click="changeCurNode('other', currentIP, currentPort); dropCon=false">
+              <label class="">
                 Submit
               </label>
             </button>
@@ -614,7 +614,7 @@
  *     MyEtherWallet LLC  
  *******************************************************************************/-->
 <h1 class="wallet-details">
-  <img src="images/icons/small-logo.png"/>
+  <img src="images/icons/small-logo.svg"/>
   Use Wallet
 </h1>
 <article class="col-sm-4">
@@ -836,8 +836,7 @@
 
 
   <!-- If unlocked with PK -->
-  <article class="block" ng-hide="wallet.type=='addressOnly'" style="background: #fff;
-     color: #12173A; border: 2px solid #5af0bd;">
+  <article class="block" ng-hide="wallet.type=='addressOnly'" style="">
 
 
     <!-- To Address -->
@@ -868,8 +867,8 @@
 
           <div class="input-group-btn">
 
-            <button style="min-width: 170px"
-               class="btn btn-default">
+            <button style="min-width: 170px;color:#fff;background-color:#4221cc "
+               class="btn btn-default ">
                 <strong>
                   AION
                 </strong>
@@ -961,7 +960,7 @@
     </div>
 
     <div class="clearfix form-group" ng-show="rootScopeShowRawTx">
-      <a class="btn btn-primary btn-block col-sm-11"
+      <a class="btn btn-primary btn-block col-sm-11 "
          data-toggle="modal"
          data-target="#sendTransaction"
          translate="SEND_trans"
@@ -1207,7 +1206,7 @@
  *     MyEtherWallet LLC  
  *******************************************************************************/-->
 <h1 class="wallet-details">
-  <img src="images/icons/small-logo.png"/>
+  <img src="images/icons/small-logo.svg"/>
   Use Wallet
 </h1>
 <article class="col-sm-4">
@@ -1409,8 +1408,7 @@
 
 
   <!-- If unlocked with PK -->
-  <article class="block" ng-hide="wallet.type=='addressOnly'" style="background: #fff;
-     color: #12173A; border: 2px solid #5af0bd;">
+  <article class="block" ng-hide="wallet.type=='addressOnly'" style="">
 
 
     <!-- To Address -->
@@ -1441,8 +1439,8 @@
 
           <div class="input-group-btn">
 
-            <button style="min-width: 170px"
-               class="btn btn-default">
+            <button style="min-width: 170px;color:#fff;background-color:#4221cc "
+               class="btn btn-default ">
                 <strong>
                   AION
                 </strong>
@@ -1534,7 +1532,7 @@
     </div>
 
     <div class="clearfix form-group" ng-show="rootScopeShowRawTx">
-      <a class="btn btn-primary btn-block col-sm-11"
+      <a class="btn btn-primary btn-block col-sm-11 "
          data-toggle="modal"
          data-target="#sendTransaction"
          translate="SEND_trans"

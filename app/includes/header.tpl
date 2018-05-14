@@ -189,7 +189,7 @@
           <button ng-click="changeCurNode('default'); dropCon= false">
             <label class="default" >Default</label>
           </button>
-          <button ng-click="changeCurNode('aion'); dropCon= false">
+          <button class="aion-button" ng-click="changeCurNode('aion'); dropCon= false">
             <label >Aion Test Net</label></br>
           </button>
 
@@ -204,8 +204,8 @@
                 <span class="dark">PORT:</span> <input type="text" ng-model="currentPort"><br>
               </div>
             </form>
-            <button ng-click="changeCurNode('other', currentIP, currentPort); dropCon=false">
-              <label>
+            <button class="aion-button" ng-click="changeCurNode('other', currentIP, currentPort); dropCon=false">
+              <label class="">
                 Submit
               </label>
             </button>

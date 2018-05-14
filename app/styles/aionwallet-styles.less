@@ -58,7 +58,7 @@ body {
   // background: red;
   // background: white;
   background:linear-gradient(to bottom,#fff 0,#f6f8fe 16%,#f6f8fe 100%);
-  //background-image: url(../images/background/bg-left.svg), url(../images/background/bg-right.svg);
+  background-image: url(https://aion.network/material/views/aion/assets/img/circuit_grid.png),url(https://aion.network/material/views/aion/assets/img/circuit_grid.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
@@ -201,7 +201,7 @@ nav.container {
   position: relative;
   // padding-right: 30px;
   // background-color: #cecece;
-  background: white;;
+  background: white !important;
   border: 1px solid #4221cc;
   color: #333;
   display: block;
@@ -227,7 +227,7 @@ ul.dropdown-menu {
       margin-bottom: .3rem;
       font-weight: 600;
       font-size: 1rem;
-      color: #333;
+      color: #fff;
     }
     label.default{
       display: inline-block;
@@ -277,6 +277,7 @@ ul.dropdown-menu {
   //   width: 85%;
   //   bottom: 20px;
   // }
+  
   button {
     font-size: 19px;
     // font-family: 'Pacifico';
@@ -287,7 +288,7 @@ ul.dropdown-menu {
     margin-bottom: .3rem;
     // font-weight: bold;
     overflow: visible;
-    border-radius: 3px;
+    border-radius: 5px;
     position: relative;
     // padding-right: 30px;
     background-color:#4221cc !important;
@@ -298,6 +299,38 @@ ul.dropdown-menu {
     cursor: pointer;
   }
 }
+aion-button {
+    font-size: 19px;
+    // font-family: 'Pacifico';
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: .3rem;
+    //margin-bottom: .3rem;
+    // font-weight: bold;
+    overflow: visible;
+    border-radius: 3px;
+    position: relative;
+    // padding-right: 30px;
+    //background-color:#4221cc !important;
+    //border: 1px solid #fff;
+    // color: #2D7586;
+    //color: #fff !important;
+    display: block;
+    cursor: pointer;
+
+    background: #4221cc !important;
+    border-color: #4221cc;
+    //background-color: #4221cc;
+    padding: 15px 25px;
+    border: 2px solid rgba(180,157,255,.15);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background: transparent;
+  }
+ 
 .modal-content{
   min-width: 1000px;
   transform: translateX(-7%);
@@ -448,7 +481,7 @@ code {
   .btn-primary:hover {
     // background: #12173A!important;
     // color: #40bded;
-    color: white;
+    color: white !important;
     // border: 1px solid white;
   }
 }
@@ -469,7 +502,7 @@ code {
 }
 .row.ng-scope .block {
   background: #fff;
-  color:  #12173A; //white;
+  color:  #4221cc; //white;
   padding-bottom: 40px;
   border: 2px solid #5af0bd30;
 }
@@ -508,7 +541,15 @@ wallet-balance-drtv {
     .block {
       background: #fff;
       color:  #12173A;
-      border: 2px solid #5af0bd30;
+      //border: 2px solid #5af0bd30;
+
+      background: #fff;
+      color: #12173A;
+      padding-bottom: 40px;
+      //border: 2px solid #5af0bd30;
+      box-shadow:  0 0 12px 1px rgba(0,0,0,.1);
+      margin-bottom: 20px;
+      padding: 20px;
     }
   }
   .block {
@@ -522,11 +563,31 @@ wallet-balance-drtv {
   }
 }
 h1.wallet-details {
-  background: #fff;
-  color: #12173A;
-  padding: 20px;
-  border: 2px solid #5af0bd30;
+  //background: #fff;
+  //color: #12173A;
+  //padding: 20px;
+  //border: 2px solid #5af0bd30;
 }
+h1.wallet-details {
+    font-size:1.5rem;
+    color:#4221cc;
+    position:relative;
+    //padding-bottom:25px;
+    //margin-bottom:25px;
+    padding: 0px 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    z-index:100;
+  }
+h1.wallet-details :after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 69px;
+    width: 50px;
+    height: 4px;
+    background-color: #5af0bd;
+  }
 
 // LAYOUT
 h1.ng-scope, .row.ng-scope, article.row{
@@ -568,6 +629,18 @@ article.decrypt-drtv  {
     ul {
       padding: 0;
     }
+  }
+  a.btn-primary {
+    background: #4221cc !important;
+    border-color: #4221cc;
+    //background-color: #4221cc;
+    padding: 15px 25px;
+    border: 2px solid rgba(180,157,255,.15);
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff !important;
+    background: transparent;
   }
   a {
     color: #4221cc;;
@@ -688,7 +761,7 @@ a.collapse-button {
   }
 
   input:focus {
-    box-shadow: 0 0 15px #88d5ec !important;
+    box-shadow: 0 0 15px #5af0bd !important;
     // border: 1px solid #88d5ec !important;
   }
   a.btn-primary {
@@ -700,7 +773,7 @@ a.collapse-button {
     margin-right: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
-    color: #fff;
+    color: #fff !important;
     background: transparent;
   }
   a {
