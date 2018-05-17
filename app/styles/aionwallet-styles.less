@@ -343,7 +343,7 @@ ul.dropdown-menu {
     margin-bottom: .3rem;
     // font-weight: bold;
     overflow: visible;
-    border-radius: 5px;
+    border-radius: 7px;
     position: relative;
     // padding-right: 30px;
     background-color:#4221cc !important;
@@ -441,6 +441,10 @@ code {
     a {
       color: inherit;
     }
+    a:hover {
+          text-decoration: underline;
+          text-decoration-color: #5af0bd;          
+        }
     .stage {
       min-height: 155px;
       display: flex;
@@ -614,8 +618,13 @@ wallet-balance-drtv {
       margin-bottom: 20px;
       padding: 20px;
 
-      a{
-        color:#4221cc;
+      a:hover{
+        //text-decoration:underline;
+        //text-decoration-color:#5af0bd;
+      }
+
+      h5{
+        color:#4221cc !important;
       }
     }
   }
@@ -624,6 +633,15 @@ wallet-balance-drtv {
   }
   ul.account-info {
     padding: 0;
+    
+    a{
+        text-decoration: none;
+    }
+
+    a:hover {
+          text-decoration: underline;
+          text-decoration-color: #5af0bd;          
+    }
   }
   span.mono.wrap {
     display: block;
@@ -693,7 +711,10 @@ article.decrypt-drtv  {
         margin-right: .5rem;
         color: #5af0bd;
       }
-      a {
+      a{
+        text-decoration: none;
+      }
+      a:hover {
           text-decoration: underline;
           text-decoration-color: #5af0bd;          
         }
@@ -955,6 +976,7 @@ a.btn-danger {
 .table-hover > tbody > tr:hover {
     background-color: rgba(0, 197, 255, 0.35) !important;
 }
+.text-right{color:4221cc;font-weight:bold;}
 // CONNECTION STATUS
 .pt-navbar-divider {
     margin-right: 5px;
