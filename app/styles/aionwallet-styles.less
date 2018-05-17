@@ -401,6 +401,9 @@ aion-button {
   color: #333;
   border: 2px solid #5af0bd30;
 }
+.text-primary{
+  color:#4221cc !important;
+}
 // get rid of that ugly nav border
 .nav-container {
   border-top: none !important;
@@ -618,10 +621,7 @@ wallet-balance-drtv {
       margin-bottom: 20px;
       padding: 20px;
 
-      a:hover{
-        //text-decoration:underline;
-        //text-decoration-color:#5af0bd;
-      }
+      
 
       h5{
         color:#4221cc !important;
@@ -633,7 +633,7 @@ wallet-balance-drtv {
   }
   ul.account-info {
     padding: 0;
-    
+
     a{
         text-decoration: none;
     }
@@ -647,6 +647,16 @@ wallet-balance-drtv {
     display: block;
     color: #12173A;
   }
+}
+.block{
+  a:hover{
+        text-decoration:underline;
+        text-decoration-color:#5af0bd !important;
+      }
+  .btn:hover{
+        text-decoration:none !important;
+       
+      }
 }
 h1.wallet-details {
   //background: #fff;
@@ -742,6 +752,9 @@ article.decrypt-drtv  {
   }
   a.btn-file {
     color: #4221cc !important;
+  }
+  a.btn-file:hover {
+    text-decoration: none !important;
   }
 }
 a:hover {
@@ -974,9 +987,9 @@ a.btn-danger {
 }
 // MODAL HIGHLIGHT
 .table-hover > tbody > tr:hover {
-    background-color: rgba(0, 197, 255, 0.35) !important;
+    background-color: rgba(90, 240, 189, 0.35) !important;
 }
-.text-right{color:4221cc;font-weight:bold;}
+.text-right{color:#4221cc;font-weight:bold;}
 // CONNECTION STATUS
 .pt-navbar-divider {
     margin-right: 5px;
